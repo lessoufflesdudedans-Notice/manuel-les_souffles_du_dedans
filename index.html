@@ -3,62 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notice - Les souffles du dedans</title>
+  <title>Les souffles du dedans - Manuel d’utilisation</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-      background: #f8f8f8;
-      color: #222;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        linear-gradient(rgba(36, 24, 16, 0.55), rgba(36, 24, 16, 0.55)),
+        linear-gradient(135deg, #6f4a2d, #8a5a35 35%, #5b3b24 70%, #3d281a);
+      color: #f7efe3;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
     }
 
     .card {
-      background: white;
-      border-radius: 14px;
-      padding: 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      background: rgba(34, 22, 15, 0.82);
+      border: 1px solid rgba(255, 232, 201, 0.18);
+      border-radius: 20px;
+      padding: 40px 28px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(2px);
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      color: #d9b98c;
+      margin-bottom: 10px;
     }
 
     h1 {
-      margin-top: 0;
+      margin: 0 0 18px;
+      font-size: 2.4rem;
+      line-height: 1.15;
+      color: #fff5e8;
+    }
+
+    .intro {
+      font-size: 1.08rem;
+      color: #f3e3cf;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin: 0 0 18px;
+      color: #f7efe3;
+    }
+
+    .highlight {
+      background: rgba(217, 185, 140, 0.12);
+      border-left: 4px solid #d9b98c;
+      padding: 16px 18px;
+      border-radius: 12px;
+      margin: 28px 0;
     }
 
     .button {
       display: inline-block;
       margin-top: 20px;
-      padding: 12px 18px;
-      background: #222;
-      color: white;
+      padding: 14px 22px;
+      background: linear-gradient(180deg, #d8b07a, #b7844d);
+      color: #2d1b12;
       text-decoration: none;
-      border-radius: 10px;
+      font-weight: bold;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      transition: transform 0.15s ease, opacity 0.15s ease;
     }
 
     .button:hover {
-      opacity: 0.9;
+      transform: translateY(-1px);
+      opacity: 0.96;
+    }
+
+    .footer {
+      margin-top: 26px;
+      font-size: 0.95rem;
+      color: #d9c3a6;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 14px 40px;
+      }
+
+      .card {
+        padding: 26px 18px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Les souffles du dedans</h1>
-    <p>Bienvenue sur la page officielle du manuel d’utilisation de l’oracle.</p>
+  <div class="container">
+    <div class="card">
+      <div class="eyebrow">Oracle • Manuel d’utilisation</div>
 
-    <p>
-      Tu peux consulter ici les informations essentielles pour découvrir, comprendre et utiliser cet oracle dans les meilleures conditions.
-    </p>
+      <h1>Les souffles du dedans</h1>
 
-    <p>
-      Le manuel complet est disponible en téléchargement au format PDF ci-dessous.
-    </p>
+      <p class="intro">
+        Bienvenue sur la page officielle du manuel d’utilisation de l’oracle.
+      </p>
 
-    <p>
-      Merci pour ton achat et belle exploration à travers Les souffles du dedans.
-    </p>
+      <p>
+        Cette page a été pensée pour t’accompagner dans la découverte de l’univers
+        de <strong>Les souffles du dedans</strong>, dans son intention et dans sa manière
+        d’être utilisé au quotidien ou lors de temps d’introspection plus profonds.
+      </p>
 
-    <a class="button" href="Sans%20majuscules%20les%20souffles%20du%20dedans.pdf" target="_blank">Télécharger la notice PDF</a>
+      <div class="highlight">
+        Tu peux télécharger ci-dessous le manuel complet au format PDF pour retrouver
+        les explications, conseils d’utilisation et repères essentiels de l’oracle.
+      </div>
+
+      <p>
+        Que cet oracle t’offre un espace de pause, d’écoute intérieure et de rencontre
+        avec ce qui demande à être entendu.
+      </p>
+
+      <a class="button" href="Sans%20majuscules%20les%20souffles%20du%20dedans.pdf" target="_blank">
+        Télécharger le manuel PDF
+      </a>
+
+      <div class="footer">
+        Merci pour ta confiance et belle exploration.
+      </div>
+    </div>
   </div>
 </body>
 </html>
